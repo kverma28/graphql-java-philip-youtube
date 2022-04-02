@@ -34,6 +34,7 @@
       <groupId>com.github.ben-manes.caffeine</groupId>
       <artifactId>caffeine</artifactId>
     </dependency>
+    <!--    Dependency for GraphQL   -->
     <dependency>
       <groupId>com.graphql-java-kickstart</groupId>
       <artifactId>graphql-spring-boot-starter</artifactId>
