@@ -10,11 +10,8 @@
     <version>2.6.1</version>
   </parent>
   <groupId>org.example</groupId>
-  <artifactId>learn-graphql-java</artifactId>
+  <artifactId>graphql-java-philip-youtube</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-  <name>Learn GraphQL Java</name>
-  <description>Learn GraphQL Java with Philip Starritt</description>
 
   <properties>
     <java.version>11</java.version>
