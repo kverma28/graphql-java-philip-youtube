@@ -25,8 +25,7 @@ public class CustomGraphQLContextBuilder implements GraphQLServletContextBuilder
   private final DataLoaderRegistryFactory dataLoaderRegistryFactory;
 
   @Override
-  public GraphQLContext build(HttpServletRequest httpServletRequest,
-      HttpServletResponse httpServletResponse) {
+  public GraphQLContext build(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 
     MDC.put(CORRELATION_ID, UUID.randomUUID().toString());
 
