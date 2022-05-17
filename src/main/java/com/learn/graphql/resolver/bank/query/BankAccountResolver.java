@@ -42,7 +42,7 @@ public class BankAccountResolver implements GraphQLResolver<BankAccount> {
         .build();
   }
 
-  @PreAuthorize("hasAuthority('get:bank_account_balance')")
+//  @PreAuthorize("hasAuthority('get:bank_account_balance')")
   public CompletableFuture<BigDecimal> balance(BankAccount bankAccount, DataFetchingEnvironment environment) {
     DataLoader<UUID, BigDecimal> dataLoader = environment.getDataLoader(DataLoaderRegistryFactory.BALANCE_DATA_LOADER);
     return dataLoader.load(bankAccount.getId(), bankAccount);

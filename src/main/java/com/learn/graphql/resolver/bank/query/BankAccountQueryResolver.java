@@ -34,7 +34,7 @@ public class BankAccountQueryResolver implements GraphQLQueryResolver {
   private final CursorUtil cursorUtil;
   private final Clock clock;
 
-  @PreAuthorize("hasAuthority('get:bank_account')")
+//  @PreAuthorize("hasAuthority('get:bank_account')")
   public BankAccount bankAccount(UUID id, DataFetchingEnvironment environment) {
     log.info("Retrieving bank account id: {}", id);
 
