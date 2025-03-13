@@ -18,10 +18,8 @@ public class BalanceService {
     // Spring security context is propagated to dataloader threads (current executing thread)
     log.info("User ID: {}", SecurityContextHolder.getContext().getAuthentication().getPrincipal());
 
-    // Original set of ids is available via
-    var ids = bankAccountIds.keySet();
 
-    /**
+      /**
      * Part 29: VisualVM JVM Profiling
      *   Set<BigDecimal> bigCrazy = new HashSet<>();
      *   var size = ThreadLocalRandom.current().nextInt(250, 500);
